@@ -287,7 +287,7 @@
     }
 
     .product>div {
-        width: 80%;
+        width: 90%;
         display: flex;
         flex-flow: row wrap;
         align-items: center;
@@ -344,6 +344,6 @@
 
     .product>div>a>div>div:nth-of-type(2)>p:nth-of-type(2) {
         font-size: 16px;
-        color: rgb(255, 0, 0);
+        color: rgb(0, 0, 0);
     }
 }
