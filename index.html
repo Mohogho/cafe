@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/main.css?v=1.3">
+    <link rel="stylesheet" href="./css/main.css?v=1.4">
     <title>Cafe</title>
 </head>
 
@@ -75,71 +75,82 @@
 
     <!-- search section -->
     <section class="search">
-        <input type="search" placeholder="نوشیدنی مورد نظر را جست وجو کنید">
+        <input type="search" placeholder="نوشیدنی مورد نظر را جست وجو کنید" id="searchInput">
+        <div id="suggestions" class="suggestion-box"></div>
     </section>
+
 
     <!-- category section -->
     <section class="cat">
         <div>
-            <div><a href="">قهوه</a></div>
-            <div><a href="">نوشیدنی گرم</a></div>
-            <div><a href="">نوشیدنی سرد</a></div>
-            <div><a href="">ماکتیل</a></div>
-            <div><a href="">دسر</a></div>
+            <div><a href="#" data-cat="coffee">قهوه</a></div>
+            <div><a href="#" data-cat="hot">نوشیدنی گرم</a></div>
+            <div><a href="#" data-cat="cold">نوشیدنی سرد</a></div>
+            <div><a href="#" data-cat="mocktail">ماکتیل</a></div>
+            <div><a href="#" data-cat="dessert">دسر</a></div>
         </div>
     </section>
 
     <!-- product section -->
     <section class="product">
         <div>
-            <a href="">
+            <a href="" data-category="coffee">
                 <div>
-                    <div> <img src="./images/coffee.png" alt=""></div>
+                    <div> <img src="./images/Cappuccino_at_Sightglass_Coffee.jpg" alt=""></div>
                     <div>
-                        <p>کاپوچینو</p>
+                        <p class="product-name">کاپوچینو</p>
                         <p>۸۰,۰۰۰ تومان</p>
                     </div>
                 </div>
             </a>
-            <a href="">
+            <a href="" data-category="hot">
                 <div>
-                    <div> <img src="./images/coffee.png" alt=""></div>
+                    <div> <img src="./images/tea.webp" alt=""></div>
                     <div>
-                        <p>کاپوچینو</p>
-                        <p>۸۰,۰۰۰ تومان</p>
+                        <p class="product-name">چای</p>
+                        <p>٥۰,۰۰۰ تومان</p>
                     </div>
                 </div>
             </a>
-            <a href="">
+            <a href="" data-category="cold">
                 <div>
-                    <div> <img src="./images/coffee.png" alt=""></div>
+                    <div> <img src="./images/Strawberry-Smoothie-cqzb-videoSixteenByNineJumbo1600.jpg" alt=""></div>
                     <div>
-                        <p>کاپوچینو</p>
-                        <p>۸۰,۰۰۰ تومان</p>
+                        <p class="product-name">اسموتی</p>
+                        <p>٣۰۰,۰۰۰ تومان</p>
                     </div>
                 </div>
             </a>
-            <a href="">
+            <a href="" data-category="mocktail">
                 <div>
-                    <div> <img src="./images/coffee.png" alt=""></div>
+                    <div> <img src="./images/mojito-cocktails-150961e.jpg" alt=""></div>
                     <div>
-                        <p>کاپوچینو</p>
-                        <p>۸۰,۰۰۰ تومان</p>
+                        <p class="product-name">موهیتو</p>
+                        <p>٢۰۰,۰۰۰ تومان</p>
                     </div>
                 </div>
             </a>
-            <a href="">
+            <a href="" data-category="dessert">
                 <div>
-                    <div> <img src="./images/coffee.png" alt=""></div>
+                    <div> <img src="./images/tiramisu.avif" alt=""></div>
                     <div>
-                        <p>کاپوچینو</p>
-                        <p>۸۰,۰۰۰ تومان</p>
+                        <p class="product-name">تیرامیسو</p>
+                        <p>١۰۰,۰۰۰ تومان</p>
                     </div>
                 </div>
             </a>
 
         </div>
+
+
+        <!-- not found message -->
+        <div id="noResult">
+            <p> ! نتیجه‌ای یافت نشد
+            </p>
+        </div>
     </section>
+
+    <script src="./js/main.js"></script>
 </body>
 
 </html>
