@@ -411,13 +411,14 @@
         border-radius: 10px;
         width: 80%;
         height: 80%;
+        margin-top: -15px;
     }
 
     .product>div>a>div>div:nth-of-type(2) {
         width: 75%;
         height: 30%;
         direction: rtl;
-        margin-top: 20px;
+        margin-top: 5px;
     }
 
     .product>div>a>div>div:nth-of-type(2)>p:nth-of-type(1) {
