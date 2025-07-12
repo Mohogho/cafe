@@ -2,7 +2,7 @@
     .product {
         width: 100%;
         display: flex;
-                flex-wrap: wrap;
+        flex-wrap: wrap;
         justify-content: center;
         align-items: center;
     }
@@ -364,7 +364,7 @@
     }
 
     .product>div {
-        width: 90%;
+        width: 80%;
         display: flex;
         flex-flow: row wrap;
         align-items: center;

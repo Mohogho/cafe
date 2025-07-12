@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", function () {
   function showCategory(category) {
     products.forEach((product) => {
       product.style.display =
-        product.dataset.category === category ? "inline-block" : "none";
+        product.dataset.category === category ? "flex" : "none";
     });
     categoryDivs.forEach((div) => div.classList.remove("active"));
     categoryDivs.forEach((div) => {
