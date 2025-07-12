@@ -364,7 +364,7 @@
     }
 
     .product>div {
-        width: 80%;
+        width: 85%;
         display: flex;
         flex-flow: row wrap;
         align-items: center;
