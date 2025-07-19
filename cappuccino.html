@@ -4,11 +4,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/main.css?v=1.6">
+    <link rel="stylesheet" href="./css/main.css?v=1.61">
     <title>cappuccino</title>
 </head>
 
 <body>
+
+
+    <!-- menu section -->
+    <section class="menu">
+        <nav>
+            <ul>
+                <a href="">
+                    <li>
+                        <img src="./images/home.png" alt="">
+                        <p>صفحه اصلی</p>
+                    </li>
+                </a>
+                <a href="">
+
+                    <li>
+                        <img src="./images/love.png" alt="">
+                        <p>مورد علاقه ها</p>
+                    </li>
+                </a>
+                <a href="">
+                    <li>
+                        <img src="./images/trolley.png" alt="">
+                        <p>سبد خرید</p>
+                    </li>
+                </a>
+                <a href="">
+                    <li>
+                        <img src="./images/user.png" alt="">
+                        <p>پروفایل من</p>
+                    </li>
+                </a>
+            </ul>
+        </nav>
+
+    </section>
+
+
+
     <!-- top image -->
     <section class="cap">
         <div><img src="./images/capdetail.png" alt=""></div>
@@ -93,10 +131,10 @@
 
 
 
-
     <script>
         function toggleText(element) {
             const parent = element.parentElement;
+            const section = parent.closest(".desc");
             const dots = parent.querySelector(".dots");
             const moreText = parent.querySelector(".more-text");
 
@@ -104,10 +142,12 @@
                 moreText.style.display = "inline";
                 dots.style.display = "none";
                 element.textContent = "نمایش کمتر";
+                section.classList.add("expanded");
             } else {
                 moreText.style.display = "none";
                 dots.style.display = "inline";
                 element.textContent = "نمایش بیشتر";
+                section.classList.remove("expanded");
             }
         }
     </script>

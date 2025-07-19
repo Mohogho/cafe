@@ -1,5 +1,5 @@
 @media (min-width: 1200px) {
-        .cap {
+    .cap {
         width: 100%;
         height: 375px;
         position: relative;
@@ -106,6 +106,8 @@
         height: 200px;
         display: flex;
         justify-content: center;
+        margin-bottom: 110px;
+
     }
 
     .size>div {
@@ -172,12 +174,14 @@
         text-align: right;
         font-weight: 15;
         font-size: 18px;
+        padding-right: 10px;
     }
 
     .p>p:nth-of-type(2) {
         text-align: left;
         font-weight: 15;
         font-size: 18px;
+        padding-left: 10px;
     }
 
     .s>div:nth-of-type(2)>a.selected {
@@ -193,7 +197,7 @@
 }
 
 @media (min-width: 992px) and (max-width: 1200px) {
-       .cap {
+    .cap {
         width: 100%;
         height: 375px;
         position: relative;
@@ -300,6 +304,8 @@
         height: 200px;
         display: flex;
         justify-content: center;
+        margin-bottom: 110px;
+
     }
 
     .size>div {
@@ -366,12 +372,14 @@
         text-align: right;
         font-weight: 15;
         font-size: 18px;
+        padding-right: 10px;
     }
 
     .p>p:nth-of-type(2) {
         text-align: left;
         font-weight: 15;
         font-size: 18px;
+        padding-left: 10px;
     }
 
     .s>div:nth-of-type(2)>a.selected {
@@ -465,6 +473,10 @@
         justify-content: center;
     }
 
+    .desc.expanded {
+        margin-bottom: 20px;
+    }
+
     .desc>div {
         width: 93%;
         height: 100%;
@@ -494,6 +506,8 @@
         height: 200px;
         display: flex;
         justify-content: center;
+        margin-bottom: 110px;
+
     }
 
     .size>div {
@@ -560,12 +574,16 @@
         text-align: right;
         font-weight: 15;
         font-size: 18px;
+        padding-right: 10px;
+
     }
 
     .p>p:nth-of-type(2) {
         text-align: left;
         font-weight: 15;
         font-size: 18px;
+        padding-left: 10px;
+
     }
 
     .s>div:nth-of-type(2)>a.selected {
@@ -582,7 +600,7 @@
 }
 
 @media (min-width: 560px) and (max-width: 768px) {
-        .cap {
+    .cap {
         width: 100%;
         height: 375px;
         position: relative;
@@ -658,6 +676,9 @@
         direction: rtl;
         display: flex;
         justify-content: center;
+    }
+
+    .desc.expanded {
         margin-bottom: 20px;
     }
 
@@ -690,6 +711,8 @@
         height: 200px;
         display: flex;
         justify-content: center;
+        margin-bottom: 110px;
+
     }
 
     .size>div {
@@ -756,12 +779,16 @@
         text-align: right;
         font-weight: 15;
         font-size: 18px;
+        padding-right: 10px;
+
     }
 
     .p>p:nth-of-type(2) {
         text-align: left;
         font-weight: 15;
         font-size: 18px;
+        padding-left: 10px;
+
     }
 
     .s>div:nth-of-type(2)>a.selected {
@@ -776,7 +803,7 @@
 }
 
 @media (max-width: 560px) {
-            .cap {
+    .cap {
         width: 100%;
         height: 375px;
         position: relative;
@@ -852,8 +879,13 @@
         direction: rtl;
         display: flex;
         justify-content: center;
-        margin-bottom: 40px;
+        margin-bottom: 10px;
     }
+
+    .desc.expanded {
+        margin-bottom: 50px;
+    }
+
 
     .desc>div {
         width: 93%;
@@ -884,6 +916,7 @@
         height: 200px;
         display: flex;
         justify-content: center;
+        margin-bottom: 110px;
     }
 
     .size>div {
@@ -950,12 +983,14 @@
         text-align: right;
         font-weight: 15;
         font-size: 18px;
+        padding-right: 10px;
     }
 
     .p>p:nth-of-type(2) {
         text-align: left;
         font-weight: 15;
         font-size: 18px;
+        padding-left: 10px;
     }
 
     .s>div:nth-of-type(2)>a.selected {
