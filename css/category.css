@@ -25,7 +25,6 @@
         justify-content: center;
         border-bottom: 2px solid #dbdbdb;
         align-items: end;
-        padding-bottom: 15px;
     }
 
     .cat>div>div:nth-of-type(3) {
@@ -49,13 +48,15 @@
         height: 100%;
         display: flex;
         justify-content: center;
-        align-items: end;
+        align-items: center;
         color: black;
         text-decoration: none;
         font-size: 20px;
         font-weight: 500;
     }
-
+    .cat>div>div>a>p{
+        margin-top: 38px;
+    }
     .cat>div>div:hover>a {
         color: #9D5B48;
     }
@@ -101,7 +102,6 @@
         justify-content: center;
         border-bottom: 2px solid #dbdbdb;
         align-items: end;
-        padding-bottom: 15px;
     }
 
     .cat>div>div:nth-of-type(3) {
@@ -125,7 +125,7 @@
         height: 100%;
         display: flex;
         justify-content: center;
-        align-items: end;
+        align-items: center;
         color: black;
         text-decoration: none;
         font-size: 20px;
@@ -135,6 +135,10 @@
     .cat>div>div:hover>a {
         color: #9D5B48;
     }
+            .cat>div>div>a>p{
+        margin-top: 38px;
+    }
+
 
     .cat>div>div:hover {
         border-bottom: 2px solid #9D5B48;
@@ -175,7 +179,6 @@
         justify-content: center;
         border-bottom: 2px solid #dbdbdb;
         align-items: end;
-        padding-bottom: 15px;
     }
 
     .cat>div>div:nth-of-type(3) {
@@ -199,7 +202,7 @@
         height: 100%;
         display: flex;
         justify-content: center;
-        align-items: end;
+        align-items: center;
         color: black;
         text-decoration: none;
         font-size: 20px;
@@ -208,6 +211,9 @@
 
     .cat>div>div:hover>a {
         color: #9D5B48;
+    }
+        .cat>div>div>a>p{
+        margin-top: 38px;
     }
 
     .cat>div>div:hover {
@@ -249,7 +255,6 @@
         justify-content: center;
         border-bottom: 2px solid #dbdbdb;
         align-items: end;
-        padding-bottom: 15px;
     }
 
     .cat>div>div:nth-of-type(3) {
@@ -273,7 +278,7 @@
         height: 100%;
         display: flex;
         justify-content: center;
-        align-items: end;
+        align-items: center;
         color: black;
         text-decoration: none;
         font-size: 16px;
@@ -282,6 +287,9 @@
 
     .cat>div>div:hover>a {
         color: #9D5B48;
+    }
+        .cat>div>div>a>p{
+        margin-top: 14px;
     }
 
     .cat>div>div:hover {
@@ -323,7 +331,6 @@
         justify-content: center;
         border-bottom: 2px solid #dbdbdb;
         align-items: end;
-        padding-bottom: 15px;
     }
 
     .cat>div>div:nth-of-type(3) {
@@ -347,7 +354,7 @@
         height: 100%;
         display: flex;
         justify-content: center;
-        align-items: end;
+        align-items: center;
         color: black;
         text-decoration: none;
         font-size: 12px;
@@ -356,6 +363,9 @@
 
     .cat>div>div:hover>a {
         color: #9D5B48;
+    }
+        .cat>div>div>a>p{
+        margin-top: 10px;
     }
 
     .cat>div>div:hover {
