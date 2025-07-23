@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/main.css?v=1.8">
+    <title>cappuccino</title>
+</head>
+
+<body>
+
+
+    <!-- menu section -->
+    <section class="menu">
+        <nav>
+            <ul>
+                <a href="">
+                    <li>
+                        <img src="./images/home.png" alt="">
+                        <p>صفحه اصلی</p>
+                    </li>
+                </a>
+                <a href="">
+
+                    <li>
+                        <img src="./images/love.png" alt="">
+                        <p>مورد علاقه ها</p>
+                    </li>
+                </a>
+                <a href="">
+                    <li>
+                        <img src="./images/trolley.png" alt="">
+                        <p>سبد خرید</p>
+                    </li>
+                </a>
+                <a href="">
+                    <li>
+                        <img src="./images/user.png" alt="">
+                        <p>پروفایل من</p>
+                    </li>
+                </a>
+            </ul>
+        </nav>
+
+    </section>
+
+
+
+    <!-- top image -->
+    <section class="cap">
+        <div><img src="./images/shirini-paye-sib.jpg" alt=""></div>
+        <div>
+            <div><a href="./index.html"><img src="./images/back.png" alt=""></a></div>
+            <div>
+                <p style="color: black;">پای سیب</p>
+                <p style="color: #202020;">گرم و خوش‌عطر</p>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- description -->
+    <section class="desc">
+        <div>
+            <p>توضیحات</p>
+            <p>
+                در "ترنج کافه"، پای سیب با تکه‌های نرم و شیرین سیب تازه، دارچین معطر، و پوسته‌ای طلایی و ترد تهیه
+                می‌شود. این دسر کلاسیک، با طعمی گرم و دل‌پذیر، یادآور خانه‌های پر از عطر و صمیمیت است. ترکیب لطافت میوه،
+                ادویه‌ی دل‌نشین
+                <span class="dots">...</span>
+                <span class="more-text" style="display: none;">
+                    و بافت کره‌ای خمیر، پای سیب ما را به گزینه‌ای ایده‌آل برای همراهی با یک فنجان چای یا قهوه در روزهای
+                    آرام تبدیل می‌کند. می‌توانید آن را به‌صورت گرم و همراه با بستنی وانیلی سفارش دهید و لحظه‌ای از لذت
+                    خالص را تجربه کنید.
+                </span>
+                <a href="javascript:void(0);" class="btn" onclick="toggleText(this)">نمایش بیشتر</a>
+            </p>
+        </div>
+    </section>
+
+
+    <!-- price and size -->
+    <section class="size">
+        <div>
+            <div class="s">
+                <div>
+                    <p>اندازه</p>
+                </div>
+                <div>
+                    <a href="javascript:void(0);" onclick="changePrice(this)" data-price="800000">
+                        <p>L</p>
+                    </a>
+                    <a href="javascript:void(0);" onclick="changePrice(this)" data-price="750000">
+                        <p>M</p>
+                    </a>
+                    <a href="javascript:void(0);" onclick="changePrice(this)" data-price="700000" class="selected">
+                        <p>S</p>
+                    </a>
+                </div>
+            </div>
+            <div class="p">
+                <p> : قیمت</p>
+                <p id="price">۸۰۰,۰۰۰ تومان</p>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        window.onload = function () {
+            // نمایش قیمت پیش‌فرض
+            const defaultBtn = document.querySelector('.s a.selected');
+            if (defaultBtn) changePrice(defaultBtn);
+        };
+
+        function changePrice(element) {
+            const priceElement = document.getElementById("price");
+            const rawPrice = element.getAttribute("data-price");
+            const formattedPrice = Number(rawPrice).toLocaleString('fa-IR');
+            priceElement.textContent = formattedPrice + " تومان";
+
+            // حذف کلاس selected از بقیه گزینه‌ها
+            const allButtons = document.querySelectorAll('.s a');
+            allButtons.forEach(btn => btn.classList.remove('selected'));
+
+            // افزودن selected به دکمه فعلی
+            element.classList.add('selected');
+        }
+    </script>
+
+
+
+
+
+    <script>
+        function toggleText(element) {
+            const parent = element.parentElement;
+            const section = parent.closest(".desc");
+            const dots = parent.querySelector(".dots");
+            const moreText = parent.querySelector(".more-text");
+
+            if (moreText.style.display === "none") {
+                moreText.style.display = "inline";
+                dots.style.display = "none";
+                element.textContent = "نمایش کمتر";
+                section.classList.add("expanded");
+            } else {
+                moreText.style.display = "none";
+                dots.style.display = "inline";
+                element.textContent = "نمایش بیشتر";
+                section.classList.remove("expanded");
+            }
+        }
+    </script>
+
+</body>
+
+</html>
