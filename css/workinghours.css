@@ -1,0 +1,60 @@
+        .overlay2 {
+            background: url('../images/coffee-171653_1280.jpg') no-repeat center center/cover;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            margin: 0;
+            color: #fff;
+            position: relative;
+            overflow-x: hidden;
+        }
+
+        .backcolor2 {
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.6);
+            z-index: 1;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+        h2 {
+            font-size: 2rem;
+            margin-bottom: 30px;
+            z-index: 2;
+        }
+
+        .hours-card {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 20px 30px;
+            border-radius: 15px;
+            backdrop-filter: blur(6px);
+            width: 300px;
+            transition: transform 0.3s ease;
+            z-index: 2;
+        }
+
+        .hours-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .hours-card p {
+            margin: 10px 0;
+            font-size: 1.1rem;
+        }
+
+        .icon {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            color: #ffcc66;
+        }
+
+        @media (max-width: 768px) {
+            .hours-card {
+                width: 80%;
+            }
+        }
