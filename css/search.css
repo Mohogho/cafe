@@ -33,11 +33,11 @@
         width: 80%;
         max-height: 200px;
         overflow-y: auto;
+        -webkit-overflow-scrolling: touch; /* اضافه شد */
         z-index: 1;
         direction: rtl;
         font-size: 16px;
         border-radius: 10px;
-
     }
 
     .suggestion-box div {
@@ -48,6 +48,11 @@
     .suggestion-box div:hover {
         background-color: #c4c4c4;
     }
+
+    .suggestion-box {
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch; /* اسکرول نرم موبایل */
+}
 
 }
 
@@ -87,11 +92,11 @@
         width: 80%;
         max-height: 200px;
         overflow-y: auto;
+        -webkit-overflow-scrolling: touch; /* اضافه شد */
         z-index: 1;
         direction: rtl;
         font-size: 16px;
         border-radius: 10px;
-
     }
 
     .suggestion-box div {
@@ -140,11 +145,11 @@
         width: 80%;
         max-height: 200px;
         overflow-y: auto;
+        -webkit-overflow-scrolling: touch; /* اضافه شد */
         z-index: 1;
         direction: rtl;
         font-size: 16px;
         border-radius: 10px;
-
     }
 
     .suggestion-box div {
@@ -190,14 +195,13 @@
         top: 90%;
         background-color: #f1f1f1;
         width: 80%;
-        max-height: 200px;
+        max-height: 40vh; /* موبایل */
         overflow-y: auto;
+        -webkit-overflow-scrolling: touch; /* اضافه شد */
         z-index: 1;
         direction: rtl;
         font-size: 16px;
         border-radius: 10px;
-        
-
     }
 
     .suggestion-box div {
@@ -243,13 +247,13 @@
         top: 85%;
         background-color: #f1f1f1;
         width: 80%;
-        max-height: 200px;
+        max-height: 40vh; /* موبایل */
         overflow-y: auto;
+        -webkit-overflow-scrolling: touch; /* اضافه شد */
         z-index: 1;
         direction: rtl;
         font-size: 14px;
         border-radius: 10px;
-
     }
 
     .suggestion-box div {
