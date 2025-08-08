@@ -99,29 +99,30 @@
       categoryDivs.forEach((div) => div.classList.remove("active"));
     }
 
-    // ✅ بسته شدن ساجست و پاک شدن اینپوت در صورت کلیک بیرون از آن
-    document.addEventListener("click", function (e) {
-      if (!searchInput.contains(e.target) && !suggestionsBox.contains(e.target)) {
-        suggestionsBox.innerHTML = "";
-        searchInput.value = "";
-      }
-    });
-
-
-    // ✅ فعال‌کردن اسکرول داخل suggestion-box حتی وقتی کیبورد موبایل بازه
-suggestionsBox.addEventListener("touchstart", function (e) {
-  // اگر محتوای suggestion-box اسکرول دارد، اجازه لمس را بده
+// جلوگیری از اسکرول کردن صفحه اصلی وقتی داخل suggestion اسکرول می‌کنیم (مخصوص موبایل)
+suggestionsBox.addEventListener('touchstart', function (e) {
   if (this.scrollHeight > this.clientHeight) {
-    e.stopPropagation();
+    // ثبت موقعیت اولیه اسکرول
+    this.startY = e.touches[0].pageY;
+    this.startScrollTop = this.scrollTop;
   }
-}, { passive: true });
+}, { passive: false });
 
-suggestionsBox.addEventListener("touchmove", function (e) {
-  // جلوگیری از اسکرول کل صفحه ولی اجازه به اسکرول داخلی
+suggestionsBox.addEventListener('touchmove', function (e) {
   if (this.scrollHeight > this.clientHeight) {
-    e.stopPropagation();
+    const currentY = e.touches[0].pageY;
+    const diff = currentY - this.startY;
+
+    // وقتی به انتهای بالا یا پایین رسیده‌ایم، اجازه نده صفحه اصلی اسکرول شود
+    if (
+      (this.scrollTop === 0 && diff > 0) || // در بالاترین نقطه و اسکرول به پایین (کشیدن صفحه به پایین)
+      (this.scrollTop + this.clientHeight >= this.scrollHeight && diff < 0) // در پایین‌ترین نقطه و اسکرول به بالا (کشیدن صفحه به بالا)
+    ) {
+      e.preventDefault(); // جلوگیری از اسکرول صفحه اصلی
+    }
   }
-}, { passive: true });
+}, { passive: false });
+
 
 
 
