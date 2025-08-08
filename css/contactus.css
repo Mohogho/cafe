@@ -1,0 +1,50 @@
+ body {
+            margin: 0;
+            background: url('../images/janko-ferlic-h9Iq22JJlGk-unsplash.jpg') no-repeat center center/cover;
+            color: #fff;
+        }
+        .overlay {
+            background: rgba(0,0,0,0.6);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+        h2 {
+            font-size: 2rem;
+            margin-bottom: 40px;
+        }
+        .contact-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+        .contact-card {
+            background: rgba(255,255,255,0.1);
+            padding: 20px 30px;
+            border-radius: 15px;
+            backdrop-filter: blur(6px);
+            width: 250px;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+        .contact-card:hover {
+            transform: translateY(-5px);
+        }
+        .contact-icon {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            color: #ffcc66;
+        }
+        p {
+            margin: 0;
+            font-size: 1rem;
+        }
+        @media (max-width: 768px) {
+            .contact-card {
+                width: 90%;
+            }
+        }
