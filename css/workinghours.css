@@ -42,7 +42,7 @@
             transform: translateY(-5px);
         }
 
-        .hours-card p {
+        .hours-card>p {
             margin: 10px 0;
             font-size: 1.1rem;
         }
