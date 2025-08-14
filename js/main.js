@@ -117,3 +117,35 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 });
+
+
+document.addEventListener("DOMContentLoaded", function() {
+  const menuLinks = document.querySelectorAll(".menu nav ul a");
+
+  const newImages = {
+    "index.html": "./images/coloredhom.png",
+    "aboutus.html": "./images/coloredabout.png",
+    "contactus.html": "./images/coloredphone-call.png",
+    "workinghour.html": "./images/coloredworking-hours.png"
+  };
+
+  const currentPage = window.location.pathname.split("/").pop(); // فقط نام فایل صفحه
+
+  menuLinks.forEach(link => {
+    const liText = link.querySelector("p");
+    const liImg = link.querySelector("img");
+
+    // استخراج فقط نام فایل href
+    let linkPage = link.getAttribute("href").split("/").pop();
+
+    if (linkPage === currentPage) {
+      // تغییر رنگ متن
+      liText.style.color = "#9E5E3B";
+      // جایگزینی تصویر
+      if (newImages[currentPage]) {
+        liImg.src = newImages[currentPage];
+      }
+    }
+  });
+});
+
