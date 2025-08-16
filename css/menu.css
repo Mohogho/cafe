@@ -21,7 +21,7 @@
         width: 100%;
         height: 100%;
         display: flex;
-        flex-flow: row nowrap;
+        flex-flow: row-reverse nowrap;
         justify-content: center;
         align-items: center;
         text-decoration: none;
@@ -84,7 +84,7 @@
         width: 100%;
         height: 100%;
         display: flex;
-        flex-flow: row nowrap;
+        flex-flow: row-reverse nowrap;
         justify-content: center;
         align-items: center;
         text-decoration: none;
@@ -147,7 +147,7 @@
         width: 100%;
         height: 100%;
         display: flex;
-        flex-flow: row nowrap;
+        flex-flow: row-reverse nowrap;
         justify-content: center;
         align-items: center;
         text-decoration: none;
@@ -210,7 +210,7 @@
         width: 100%;
         height: 100%;
         display: flex;
-        flex-flow: row nowrap;
+        flex-flow: row-reverse nowrap;
         justify-content: center;
         align-items: center;
         text-decoration: none;
@@ -273,7 +273,7 @@
         width: 100%;
         height: 100%;
         display: flex;
-        flex-flow: row nowrap;
+        flex-flow: row-reverse nowrap;
         justify-content: center;
         align-items: center;
         text-decoration: none;
