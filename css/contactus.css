@@ -29,9 +29,9 @@
      display: flex;
      flex-wrap: wrap;
      justify-content: center;
-     gap: 20px;
+     gap: 10px;
      z-index: 2;
-     margin-bottom: 150px;
+     margin-bottom: 100px;
  }
 
  .contact-card {
